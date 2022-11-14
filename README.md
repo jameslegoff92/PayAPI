@@ -31,7 +31,6 @@
 
   - To implement the MVC pattern.
   - How to use TailwindCSS.
-  - To keep my CSS as DRY and clean as possible.
   - To become more familiar with aspects of backend development.
   - To use a template engine to speed up my development process.
   - To implement responsive web design.
