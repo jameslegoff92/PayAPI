@@ -1,0 +1,22 @@
+{
+  "name": "payapi",
+  "version": "1.0.0",
+  "description": "- [My process](#my-process)\r - [Built with](#built-with)\r - [Objectives](#objectives)\r - [What I learned](#what-i-learned)\r - [Author](#author)",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "nodemon --watch ./client/public --watch ./server server.js -e js,ejs,scss,css,html",
+    "watch": "tailwindcss -i ./client/tailwind/tailwind.css -o ./client/public/css/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "ejs": "^3.1.8",
+    "eslint": "^8.27.0",
+    "express": "^4.18.2",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.20",
+    "sass": "^1.56.1",
+    "tailwindcss": "^3.2.4"
+  }
+}

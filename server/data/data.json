@@ -1,0 +1,77 @@
+{
+  "partners": [
+    "./assets/shared/desktop/tesla.svg",
+    "./assets/shared/desktop/microsoft.svg",
+    "./assets/shared/desktop/hewlett-packard.svg",
+    "./assets/shared/desktop/oracle.svg",
+    "./assets/shared/desktop/google.svg",
+    "./assets/shared/desktop/nvidia.svg"
+  ],
+  "services": [
+    {
+      "img": "/assets/home/desktop/icon-personal-finances.svg",
+      "title": "Personal Finances",
+      "description": "Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. "
+    },
+    {
+      "img": "/assets/home/desktop/icon-banking-and-coverage.svg",
+      "title": "Banking & Coverage",
+      "description": "With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts."
+    },
+    {
+      "img": "/assets/home/desktop/icon-consumer-payments.svg",
+      "title": "Consumer Payments",
+      "description": "It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account."
+    }
+  ],
+  "prices": [
+    {
+      "title": "Free Plan",
+      "description": "Build and test using our core set of products with up to 100 API requests ",
+      "price": 0.00
+    },
+    {
+      "title": "Basic Plan",
+      "description": "Launch your project with unlimited requests and no contractual minimums ",
+      "price": 249.00
+    },
+    {
+      "title": "Premium Plan",
+      "description": "Get tailored solutions, volume pricing, and dedicated support for your team",
+      "price": 499.00
+    }
+  ],
+  "features": ["Transactions", "Auth", "Identity", "Investments", "Assets", "Liabilities", "Income"],
+  "values": [
+    {
+      "title": "Our Vision",
+      "description": "Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology. "
+    },
+    {
+      "title": "Our Business",
+      "description": "At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers."
+    },
+    {
+      "title": "The Culture",
+      "description": "We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title."
+    },
+    {
+      "title": "The People",
+      "description": "We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills."
+    }
+  ],
+  "stats": [
+    {
+      "title": "Team Members",
+      "stat": "300+"
+    },
+    {
+      "title": "Offices in the US",
+      "stat": 3
+    },
+    {
+      "title": "Transactions analyzed",
+      "stat": "10M+"
+    }
+  ]
+}
