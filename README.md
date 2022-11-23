@@ -1,11 +1,11 @@
 #  PayAPI | A Digital Marketing Company
 
 ## Table of contents
-[My process](#my-process)
-[Built with](#built-with)
-[Objectives](#objectives)
-[What I learned](#what-i-learned)
-[Author](#author)
+-[My process](#my-process)
+-[Built with](#built-with)
+-[Objectives](#objectives)
+-[What I learned](#what-i-learned)
+-[Author](#author)
 
 ## Built with
 
