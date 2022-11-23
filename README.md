@@ -13,7 +13,7 @@
 - Responsive Design
 - TailwindCSS
 - Javascript
-- NodeJS
+- NodeJS 
 - Nodemon
 - EJS
 - MVC Pattern
