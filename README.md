@@ -1,11 +1,10 @@
 #  PayAPI | A Digital Marketing Company
 
 ## Table of contents
--[My process](#my-process)
--[Built with](#built-with)
--[Objectives](#objectives)
--[What I learned](#what-i-learned)
--[Author](#author)
+*[Built with](#built-with)*  
+*[Objectives](#objectives)*  
+*[What I learned](#what-i-learned)*  
+*[Author](#author)*
 
 ## Built with
 
@@ -13,7 +12,7 @@
 - Mobile-first workflow
 - Responsive Design
 - TailwindCSS
-- JS
+- Javascript
 - NodeJS
 - Nodemon
 - EJS
@@ -22,18 +21,27 @@
 - TailwindCSS
 
 
-## Objective of this Project
+## Objectives
 
-- The goal of __Version #1__ of this project was to create a multi-page digital marketing website for a start-up organization. The site should be responsive, pixel-perfect to the designs given, should work on all modern browsers.
+- The goal of __Version #1__ of this project was to create a multi-page digital marketing website for a start-up organization. The site should be responsive. Hence, it should look good on all screen sizes. The site should look good on all modern browsers and mobile devices. The site should receive a passing score whene analyzed by Google's PageSpeed tool. It should also turn up no erros when its HTML is passed through the W3C's HTML validator.
 
+- __Version #2__ will add the functionality of registering a client to a database, and sending an email to the user if they signup for our newsletter.
+
+## Checklist
+- [x] Check website functionality and design on all modern browsers and mobile devices.
+- [x] Use PageSpeed Insights to check site speed. Fix any issues that result from the analysis.
+- [x] Check responsiveness. Ensure the design looks good across all screen devices.
+- [x] Validate HTML to ensure it is compliant with W3C standards.
+- [ ] Store the data of clients inside a database.
+- [ ] Send an email to clients that sign up for the newsletter.
 
 ## What I learned
 
-  - To implement the MVC pattern.
+  - How to implement the MVC pattern.
   - How to use TailwindCSS.
-  - To become more familiar with aspects of backend development.
-  - To use a template engine to speed up my development process.
-  - To implement responsive web design.
+  - How to use NodeJS.
+  - How to use a template engine to speed up my development process.
+  - How implement responsive web design.
 
 ## Author
 
