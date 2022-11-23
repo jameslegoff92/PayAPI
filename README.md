@@ -23,7 +23,7 @@
 
 ## Objectives
 
-- The goal of __Version #1__ of this project was to create a multi-page digital marketing website for a start-up organization. The site should be responsive. Hence, it should look good on all screen sizes. The site should look good on all modern browsers and mobile devices. The site should receive a passing score whene analyzed by Google's PageSpeed tool. It should also turn up no erros when its HTML is passed through the W3C's HTML validator.
+- The goal of __Version #1__ of this project was to create a multi-page digital marketing website for a start-up organization. The site should be responsive. Hence, it should look good on all screen sizes. The site should look good on all modern browsers and mobile devices. The site should receive a passing score when analyzed by Google's PageSpeed tool. It should also turn up no errors when its HTML is passed through the W3C's HTML validator.
 
 - __Version #2__ will add the functionality of registering a client to a database, and sending an email to the user if they signup for our newsletter.
 
