@@ -1,0 +1,81 @@
+<%- include('../partials/head.ejs') %>
+
+  <div style="margin-bottom: 175px;" class="xl:w-max xl:mx-auto">
+
+    <%- include('../partials/nav.ejs') %>
+
+      <div class="">
+        <header class="text-center xl:text-left">
+          <h1
+            class="font-dm text-32 md:text-5xl xl:text-7xl text-sc1 leading-1.125 xl:leading-none tracking-300 md:tracking-500 mb-12 md:my-16 xl:my-20">
+            Pricing
+          </h1>
+        </header>
+
+        <main class="text-center w-109/125 xl:w-max mx-auto">
+          <div
+            class="md:flex md:justify-between md:mb-[100px] md:max-w-[936px] xl:max-w-max md:mx-auto xl:mx-0 xl:text-left">
+            <% for (let price of pricingData) { %>
+              <div class="mx-auto xl:mx-0 max-w-[254px] xl:max-w-[350px] md:w-[31%] xl:w-[31%]">
+                <h4
+                  class="font-dm text-pc1 text-24 leading-1.4 md:leading-1.7 tracking-250 xl:tracking-300 mb-20 md:mb-[13px]">
+                  <%= price.title %>
+                </h4>
+
+                <p class="hidden md:block font-public text-15 text-sc4 leading-1.87 mb-[19px]">
+                  <%= price.description %>
+                </p>
+
+                <h1
+                  class="font-dm text-sc1 text-56p md_lg:text-5xl leading-1.4 tracking-550 md_lg:tracking-500 mb-6 md_lg:mb-[21px]">
+                  $<%= price.price %>.00
+                </h1>
+
+                <hr class="text-sc1 opacity-25 mb-6">
+
+                <ul class="text-center mb-6 ">
+                  <% for (let feature of features) { %>
+                    <% if (price.title==="Free Plan" ) { %>
+                      <li class="flex w-32 xl:w-full mx-auto mb-2 before:content-link before:mr-6 freeplan">
+                        <%= feature %>
+                      </li>
+                      <% } else if (price.title==="Basic Plan" ) { %>
+                        <li class="flex w-32 xl:w-full mx-auto mb-2 before:content-link before:mr-6 basicplan">
+                          <%= feature %>
+                        </li>
+                        <% } else { %>
+                          <li class="flex w-32 xl:w-full mx-auto mb-2 before:content-link before:mr-6">
+                            <%= feature %>
+                          </li>
+                          <% } %>
+                            <% } %>
+                </ul>
+
+                <hr class="text-sc1 opacity-25 mb-6">
+
+                <div class="xl:text-center xl:relative">
+                  <a href="" class="inline-block font-public font-bold tracking-200 text-sc1 mb-12 px-4 pt-3 pb-3 outline outline-1 rounded-3xl w-btn_md xl:absolute left-0 hover:bg-sc1 hover:text-pc2
+                  ">
+                    Request Access
+                  </a>
+                </div>
+              </div>
+              <% } %>
+          </div>
+
+          <div
+            class="w-109/125 xl:w-max mx-auto max-w-[445px] xl:max-w-full mb-20 text-center xl:flex xl:justify-between">
+            <h2 class="font-dm text-32 md:text-48p text-sc1 leading-1.125 tracking-300 mb-8 "> Ready to start? </h2>
+
+            <%- include('../partials/formbuttons.ejs') %>
+
+          </div>
+        </main>
+      </div>
+  </div>
+
+
+  <%- include('../partials/footer.ejs') %>
+
+
+    <%- include('../partials/end.ejs') %>

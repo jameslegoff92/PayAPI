@@ -1,0 +1,103 @@
+<%- include('../partials/head.ejs') %>
+
+  <div class="xl:w-max xl:mx-auto">
+
+    <%- include('../partials/nav.ejs') %>
+
+  </div>
+
+  <div style="margin-bottom: 100px;" class="tall:h-[calc(100vh-114px)]">
+    <header
+      class="w-109/125 xl:w-max mx-auto max-w-327p md:max-w-500p xl:max-w-max text-center xl:text-left mt-48p md:mt-76 xl:mt-80p mb-10 md:mb-56p xl:mb-40">
+      <h1
+        class="font-dm text-32 md:text-48p xl:text-56p text-sc1 leading-1.125 xl:leading-none tracking-300 md:tracking-500 xl:tracking-550 mb-6 md:mb-56p xl:mb-51p xl:w-[700px]">
+        Submit a help request and we'll get in touch shortly
+      </h1>
+    </header>
+
+    <div class="xl:w-max xl:mx-auto xl:flex xl:justify-between xl:items-center">
+      <main class="w-109/125 mx-auto xl:mx-0 max-w-445p">
+        <form id="form" action="" autocomplete="off">
+          <label for="name" class="relative">
+            <input
+              class="bg-transparent block w-full pl-5 pb-4 border-b mb-6 text-sc4 focus:outline-0 focus:border-b-sc1 focus:placeholder:text-sc1 focus:cursor-pointer"
+              id="name" type="text" placeholder="Name"  >
+            <p id="errmsg" class="hidden absolute left-4 top-11 text-11 text-[#ff0000] opacity-50"> This field can't be empty </p>
+          </label>
+
+          <label for="email" class="relative">
+            <input
+              class="bg-transparent block w-full pl-5 pb-4 border-b mb-6 text-sc4 focus:outline-0 focus:border-b-sc1 focus:placeholder:text-sc1 focus:cursor-pointer"
+              id="email" type="email" placeholder="Email Address">
+              <p id="errmsg" class="hidden absolute left-4 top-11 text-11 text-[#ff0000] opacity-50"> This field can't be empty </p>
+          </label>
+
+          <label for="company">
+            <input
+              class="bg-transparent block w-full pl-5 pb-4 border-b mb-6 text-sc4 focus:outline-0 focus:border-b-sc1 focus:placeholder:text-sc1 focus:cursor-pointer"
+              id="company" type="text" placeholder="Company Name">
+          </label>
+
+          <label for="title">
+            <input
+              class="bg-transparent block w-full pl-5 pb-4 border-b mb-6 text-sc4 focus:outline-0 focus:border-b-sc1 focus:placeholder:text-sc1 focus:cursor-pointer"
+              id="title" type="text" placeholder="Title">
+          </label>
+
+          <label for="message">
+            <textarea
+              class="bg-transparent block w-full pl-5 border-b mb-6 text-sc4 focus:outline-0 focus:border-b-sc1 focus:placeholder:text-sc1 focus:cursor-pointer"
+              name="" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+          </label>
+
+          <div class="checkbox-container mb-6">
+            <input type="checkbox" id="checkbox">
+            <label class="font-public text-15 text-sc1 leading-1.7 tracking-200" for="checkbox">
+              Stay up-to-date with company announcements and updates to our API
+            </label>
+          </div>
+
+          <button
+            class="inline-block font-public font-bold tracking-200 text-sc1 mb-12 px-4 pt-3 pb-3 outline outline-1 rounded-3xl w-btn_md hover:bg-sc1 hover:text-pc2"
+            type="submit" id="submit" disabled>
+            Submit
+          </button>
+        </form>
+      </main>
+
+      <section class="w-109/125 mx-auto xl:mx-0 text-center xl:text-left xl:max-w-[541px]">
+        <h2
+          class="max-w-445p mx-auto xl:mx-0 font-dm text-sc1 text-24 leading-1.4 opacity-75 tracking-400 mb-8 md:mb-10 md:w-[440px] xl:w-full">
+          Join the thousands of innovators already building with us
+        </h2>
+
+        <div class="w-109/125 mx-auto xl:w-auto">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-16 w-280/327 md:w-573p xl:w-auto mx-auto mb-14">
+
+            <% for (let partner of partners) { %>
+              <div class="mx-auto">
+                <img class="text-pc2" src="<%= partner %>" alt="">
+              </div>
+              <% } %>
+          </div>
+      </section>
+    </div>
+
+
+    <div class="xl:w-max xl:mx-auto">
+      <div
+        class="w-109/125 xl:w-full mx-auto max-w-[445px] xl:max-w-full mb-80p md:mb-100p xl:mb-96p text-center xl:flex xl:justify-between">
+        <h2 class="font-dm text-32 md:text-48p text-sc1 leading-1.125 tracking-300 mb-8 "> Ready to start? </h2>
+
+        <%- include('../partials/formbuttons.ejs') %>
+
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <%- include('../partials/footer.ejs') %>
+  </div>
+ 
+
+<%- include('../partials/end.ejs') %>

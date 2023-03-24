@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Table of Contents.
+
+  1. Styling for custom checkboxes.
+  2. Styling for the different background images.
+  3. Styling for the form error messages.
+  4. Styling to make contenet fullscreen.
+  
+*/
+
+/* Code to make a custom checkbox button */
+* {
+  box-sizing: border-box;
+}
+
+.checbox-container {
+
+}
+
+.checkbox-container label {
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+}
+
+.checkbox-container input[type='checkbox'] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-container label::before {
+  content: '';
+  background-color: #6c8294;
+  box-sizing: border-box;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: .15em;
+  margin-right: 5%; 
+}
+
+.checkbox-container input[type='checkbox']:checked + label::before {
+  content: "\002714";
+  background-color: #ba4270;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.freeplan:nth-child(n+4) {
+  opacity: 50%
+}
+
+.freeplan:nth-child(n+4)::before {
+  opacity: 0;
+}
+.basicplan:nth-child(n+6) {
+  opacity: 50%
+}
+
+.basicplan:nth-child(n+6)::before {
+  opacity: 0;
+}
+
+/* Background Images */
+.bg-img-1 {
+  background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat center -500px/780px 780px #edf3f8;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-1 {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat center -650px/949px 949px #edf3f8;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bg-img-1 {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat 140% -300px/949px 949px, 
+    url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat 160% 1550px/780px 780px #edf3f8;
+  }
+}
+
+
+.bg-img-2 {
+  background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat center -600px/780px 780px #1b262f;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-2 {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat center -750px/949px 949px #1b262f;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bg-img-2 {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat -100% -500px/949px 949px #1b262f;
+  }
+}
+
+.footer-bg-img {
+  background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat center 185px/780px 780px #1b262f;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-bg-img {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat -140% -50px/949px 949px #1b262f;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer-bg-img {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat 190% -50px/949px 949px #1b262f;
+  }
+}
+
+.bg-img-3 {
+  background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat right -570px top -600px/780px 780px #edf3f8;
+  
+}
+@media only screen and (min-width: 768px) {
+  .bg-img-3 {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat right -650px top -600px/949px 949px #edf3f8;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .bg-img-3 {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat right -250px top -700px/949px 949px #edf3f8;
+  }
+}
+
+.about-bg-img {
+  background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat right -250px top -700px/949px 949px #edf3f8;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-bg-img {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat right -650px top -600px/949px 949px #edf3f8;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-bg-img {
+    background: url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat right -250px top -700px/949px 949px,
+    url(/assets/shared/desktop/bg-pattern-circle.svg) no-repeat  -700px 450px/949px 949px #edf3f8;
+  }
+}
+
+/* Error Msg  */
+.err {
+  border-bottom: solid red 1px;
+  opacity: 50%;
+}
+
+.err::placeholder {
+  color: red;
+}
+
+/* Full Screen  */
+@media screen and (min-height: 1207px) and (min-width: 768px) {
+  .tall {
+    height: calc(100vh - 114px);
+  }
+}
+
+@media screen and (min-height: 1151px) and (min-width: 1440px) {
+  .tall-2 {
+    height: calc(100vh - 114px)
+  }
+}
+
+/* These are added in order to remove the default styling that exists for input elements on IOS devices. */
+input[type=text] {   
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Then Style */
+  outline: none;    
+}
+
+input[type=email] {   
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Then Style */
+  outline: none;    
+}
+
+textarea {   
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Then Style */
+  outline: none;    
+}

@@ -1,0 +1,68 @@
+<nav class="flex justify-between xl:justify-left items-center w-5/6 xl:w-full mx-auto mb-8 xl:mb-76">
+  <a class="xl:mr-64" href="/">
+    <img src="/assets/shared/desktop/logo.svg" alt="">
+  </a>
+
+  <!-- Navigation for Mobile Screens -->
+  <button id="open-nav-js" class="btn btn--open md:hidden">
+    <img src="/assets/shared/mobile/menu.svg" alt="">
+  </button>
+
+  <div id="mobile-nav-js" class="mobile-menu md:hidden bg-sc2 text">
+    <div class="text-right mb-6">
+      <button id="close-nav-js" class="hidden btn btn--close btn--close:hover">
+        <img src="/assets/shared/mobile/close.svg" alt="">
+      </button>
+    </div>
+
+    <hr class="opacity-10 text-[#979797] mb-10">
+
+    <ul id="mobile-nav-links-js" class="flex flex-col">
+      <li class="list-none mb-8 ">
+        <a class="text-20 text-pc2 opacity-70 font-public font-bold hover:opacity-100" href="/pricing">
+          Pricing
+        </a>
+      </li>
+      <li class="list-none mb-8">
+        <a class="text-20 text-pc2 opacity-70 font-public font-bold hover:opacity-100" href="/About">
+          About
+        </a>
+      </li>
+      <li class="list-none mb-8 ">
+        <a class="text-20 text-pc2 opacity-70 font-public font-bold hover:opacity-100" href="/Contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+    <button class="primary-btn w-[252px] h-btn rounded-3xl">
+      <a class="font-public text-15 text-pc2 tracking-200 font-medium" href="/contact"> Schedule a Demo </a>
+    </button>
+  </div>
+
+  <!-- Navigation for Tablet Screens and Bigger -->
+  <ul id="main-nav-js" class="hidden md:flex md:flex-row md:w-[33%] md:justify-between xl:justify-start xl:mr-auto">
+    <li class="list-none md:mr-40">
+      <a class="text-20 text-pc2 md:text-sc1 opacity-70 font-public font-bold md:text-15 hover:opacity-100"
+        href="/pricing">
+        Pricing
+      </a>
+    </li>
+    <li class="list-none md:mr-40">
+      <a class="text-20 text-pc2 md:text-sc1 opacity-70 font-public font-bold md:text-15 hover:opacity-100"
+        href="/About">
+        About
+      </a>
+    </li>
+    <li class="list-none md:mr-40">
+      <a class="text-20 text-pc2 md:text-sc1 opacity-70 font-public font-bold md:text-15 hover:opacity-100"
+        href="/Contact">
+        Contact
+      </a>
+    </li>
+  </ul>
+
+
+  <button class="hidden w-btn_md h-btn bg-pc1 hover:bg-sc3 rounded-3xl md:inline-block">
+    <a class="font-public text-15 text-pc2 tracking-200 font-medium" href="/contact"> Schedule a Demo </a>
+  </button>
+</nav>

@@ -1,0 +1,48 @@
+.btn {
+
+}
+
+.btn--open {
+  background-color: transparent;
+  padding: 15px 10px;
+  border-radius: 0;
+  transition: background-color 0.1s linear 0s, border-radius 0.1s linear 0s;
+}
+
+.btn--open:hover {
+  background-color: $sc1-op-5;
+  border-radius: 50%;
+}
+
+.btn--close {
+  background-color: transparent;
+  padding: 15px 15px;
+  border-radius: 0;
+  transition: background-color 0.1s linear 0s, border-radius 0.1s linear 0s;
+}
+
+.btn--close:hover {
+  background-color: $sc1-op-5;
+  border-radius: 50%;
+}
+
+.primary-btn {
+  background-color: $primary-color-1;
+  transition: background-color 0.2s linear;
+}
+
+.primary-btn:hover {
+  background-color: $secondary-color-3;
+  cursor: pointer;
+}
+
+.seconday-btn {
+  background-color: transparent;
+  color: $primary-color-2;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.secondary-btn:hover {
+  background-color: $primary-color-2;
+  color: $secondary-color-2;
+}

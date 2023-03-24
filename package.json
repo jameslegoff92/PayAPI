@@ -1,0 +1,38 @@
+{
+  "name": "payapi",
+  "version": "1.0.0",
+  "description": "- [My process](#my-process)\r - [Built with](#built-with)\r - [Objectives](#objectives)\r - [What I learned](#what-i-learned)\r - [Author](#author)",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --watch ./client/public --watch ./server ./server/server.js -e js,ejs,scss,css,html",
+    "watch": "tailwindcss -i ./client/tailwind/tailwind.css -o ./client/public/css/styles.css --watch",
+    "tsc": "tsc -w",
+    "test": "jest --watch",
+    "sass": "sass --watch sass/:public/css/",
+    "ts": "tsc --watch",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "connect-livereload": "^0.6.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "livereload": "^0.9.3",
+    "mysql2": "^3.2.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "sass": "^1.60.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "eslint": "^8.36.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.3"
+  }
+}
