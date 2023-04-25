@@ -1,3 +1,20 @@
+.border {
+  border: 1px solid white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
 /*
   This stylesheet will be focused on animation classes
 */
@@ -90,7 +107,7 @@
   cursor: pointer;
 }
 
-.seconday-btn {
+.secondary-btn {
   background-color: transparent;
   color: rgb(251, 252, 254);
   transition: background-color 0.2s linear, color 0.2s linear;

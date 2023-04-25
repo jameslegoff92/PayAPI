@@ -2,6 +2,7 @@
 
 }
 
+//These classes are responsible for the hover effect on the mobile menu buttons
 .btn--open {
   background-color: transparent;
   padding: 15px 10px;
@@ -26,6 +27,7 @@
   border-radius: 50%;
 }
 
+//These classes are responsible for the large buttons.
 .primary-btn {
   background-color: $primary-color-1;
   transition: background-color 0.2s linear;
@@ -36,7 +38,7 @@
   cursor: pointer;
 }
 
-.seconday-btn {
+.secondary-btn {
   background-color: transparent;
   color: $primary-color-2;
   transition: background-color 0.2s linear, color 0.2s linear;
@@ -46,3 +48,4 @@
   background-color: $primary-color-2;
   color: $secondary-color-2;
 }
+

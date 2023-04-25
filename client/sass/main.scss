@@ -2,6 +2,10 @@
 
 @import './base.scss';
 
+//Layout Styling
+@import './layouts/layouts.scss';
+
+//Component Styling 
 @import './animation.scss';
 @import './forms.scss';
 @import './button.scss';
