@@ -1,6 +1,7 @@
 const data = require('../models/data');
 
 exports.getAbout = (req, res) => {
+
   let values = data.getValues();
   let stats = data.getStats();
   let firstArr = values.slice(0,2);

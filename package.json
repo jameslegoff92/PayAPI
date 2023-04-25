@@ -8,7 +8,7 @@
     "watch": "tailwindcss -i ./client/tailwind/tailwind.css -o ./client/public/css/styles.css --watch",
     "tsc": "tsc -w",
     "test": "jest --watch",
-    "sass": "sass --watch sass/:public/css/",
+    "sass": "sass --watch client/sass/:client/public/css/",
     "ts": "tsc --watch",
     "lint": "eslint ."
   },

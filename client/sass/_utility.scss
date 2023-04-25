@@ -4,4 +4,10 @@
     bottom: 0;
     width: 100%;
   }
+}   
+
+
+.overflow-fix {
+  position: relative;
+  overflow-x: hidden;
 }

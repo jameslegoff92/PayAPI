@@ -99,5 +99,9 @@
     width: 100%;
   }
 }
+.overflow-fix {
+  position: relative;
+  overflow-x: hidden;
+}
 
 /*# sourceMappingURL=main.css.map */
