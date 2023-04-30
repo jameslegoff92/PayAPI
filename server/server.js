@@ -27,7 +27,6 @@ const staticFolderPath = path.join(__dirname, "../client/public");
 const pathToNodeModules = path.join(__dirname, "../client/node_modules");
 const pathToServer = path.join(__dirname, '../node_modules');
 
-console.log(__dirname);
 app.use(express.static(staticFolderPath));
 app.use(express.static(pathToNodeModules));
 app.use(express.static(pathToServer));
