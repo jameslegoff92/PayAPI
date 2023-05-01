@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4TKBC82531"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TKBC82531"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4TKBC82531');
-</script>
-  
+    gtag('config', 'G-4TKBC82531');
+  </script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,73 +30,76 @@
 
   </div>
 
-  <div class="xl:w-920p xl:mx-auto" >
+  <div class="xl:w-920p xl:mx-auto">
     <div class="w-109/125 md:w-681p xl:w-[730px] mx-auto max-w-[573p] text-center xl:text-left mt-48p mb-10 xl:mx-0 ">
-      <h1 class="font-dm text-32 md:text-48p xl:text-56p text-sc1 leading-1.125 xl:leading-none tracking-300 md:tracking-500 xl:tracking-550 mb-6 md:mb-56p xl:mb-51p" >
-      We empower innovators by delivering access to the financial system
+      <h1
+        class="font-dm text-32 md:text-48p xl:text-56p text-sc1 leading-1.125 xl:leading-none tracking-300 md:tracking-500 xl:tracking-550 mb-6 md:mb-56p xl:mb-51p">
+        We empower innovators by delivering access to the financial system
       </h1>
     </div>
-  
-  
+
+
     <% for (let index of firstArr) { %>
-      <div class="w-109/125 md:w-681p xl:w-[930px] mx-auto text-center md:text-left mb-12 md:flex md:justify-between" >
-        <h2 class="font-dm text-24 md:text-32 text-sc1 leading-1.4 tracking-250 md:tracking-300 mb-4" > 
-          <%= index.title %> 
+      <div class="w-109/125 md:w-681p xl:w-[930px] mx-auto text-center md:text-left mb-12 md:flex md:justify-between">
+        <h2 class="font-dm text-24 md:text-32 text-sc1 leading-1.4 tracking-250 md:tracking-300 mb-4">
+          <%= index.title %>
         </h2>
-        <p class="font-public text-15 text-sc4 md:w-456p xl:w-[635px] " >
+        <p class="font-public text-15 text-sc4 md:w-456p xl:w-[635px] ">
           <%= index.description %>
         </p>
       </div>
-    <% } %>
+      <% } %>
   </div>
 
 
-  <div class="mt-19 mb-12" >
+  <div class="mt-19 mb-12">
     <picture>
       <source srcset="/assets/about/desktop/image-team-members.jpg" media="(min-width: 769px)">
       <source srcset="/assets/about/tablet/image-team-members.jpg" media="(min-width: 376px)">
       <img class="xl:mx-auto" src="/assets/about/mobile/image-team-members.jpg " alt="">
     </picture>
   </div>
-  
+
   <div>
-    <div class="text-center w-109/125 mx-auto border-y border-border pt-4 mb-12 md:mb-64 xl:mb-76 md:flex md:justify-between md:w-681p xl:w-max xl:text-left">
+    <div
+      class="text-center w-109/125 mx-auto border-y border-border pt-4 mb-12 md:mb-64 xl:mb-76 md:flex md:justify-between md:w-681p xl:w-max xl:text-left">
       <% for (let stat of stats) { %>
-        <div class="mb-8" >
-          <h2 class="font-public text-16 text-sc1 leading-1.87 opacity-70" >
-             <%= stat.title %> 
+        <div class="mb-8">
+          <h2 class="font-public text-16 text-sc1 leading-1.87 opacity-70">
+            <%= stat.title %>
           </h2>
 
-          <h1 class="font-dm text-56p text-pc1 leading-1.4 tracking-550" >
+          <h1 class="font-dm text-56p text-pc1 leading-1.4 tracking-550">
             <%= stat.stat %>
           </h1>
         </div>
-      <% } %>
+        <% } %>
     </div>
-  
+
     <% for (let index of secondArr) { %>
       <div class="w-109/125 md:w-681p xl:w-[930px] mx-auto text-center md:text-left mb-12 md:flex md:justify-between">
         <h2 class="font-dm text-24 md:text-32 text-sc1 leading-1.4 tracking-250 md:tracking-300 mb-4">
-           <%= index.title %> 
+          <%= index.title %>
         </h2>
 
         <p class="font-public text-15 text-sc4 md:w-456p xl:w-[635px] ">
           <%= index.description %>
         </p>
       </div>
-    <% } %>
-  
-    <div class="w-109/125 xl:w-max mx-auto max-w-[445px] xl:max-w-full md:mt-76 xl:mt-100p mb-80p md:mb-100p xl:mb-96p text-center xl:flex xl:justify-between">
-      <h2 class="font-dm text-32 md:text-48p text-sc1 leading-1.125 tracking-300 mb-8"> 
-        Ready to start? 
-      </h2>
+      <% } %>
 
-      <%- include('../partials/formbuttons.ejs') %>
+        <div
+          class="w-109/125 xl:w-max mx-auto max-w-[445px] xl:max-w-full md:mt-76 xl:mt-100p mb-80p md:mb-100p xl:mb-96p text-center xl:flex xl:justify-between">
+          <h2 class="font-dm text-32 md:text-48p text-sc1 leading-1.125 tracking-300 mb-8">
+            Ready to start?
+          </h2>
 
-    </div>
+          <%- include('../partials/formbuttons.ejs') %>
+
+        </div>
   </div>
 
-    <%- include('../partials/footer.ejs') %>
+  <%- include('../partials/footer.ejs') %>
 
 
-<%- include('../partials/end.ejs') %>
+    <%- include('../partials/end.ejs') %>
