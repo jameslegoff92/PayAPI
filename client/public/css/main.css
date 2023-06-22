@@ -75,9 +75,13 @@
 
 .btn--open {
   background-color: transparent;
-  padding: 15px 10px;
+  padding: 15px 15px;
   border-radius: 0;
   transition: background-color 0.1s linear 0s, border-radius 0.1s linear 0s;
+}
+
+.visibility-hidden {
+  visibility: hidden;
 }
 
 .btn--open:hover {

@@ -13,8 +13,8 @@
         //4. Removes the "slide-right" CSS animation class to the mobile menu.
         openNav.addEventListener("click", (e) => {
             e.stopPropagation();
-            if (!openNav.classList.contains("hidden")) {
-                openNav.classList.add("hidden");
+            if (!openNav.classList.contains("visibility-hidden")) {
+                openNav.classList.add("visibility-hidden");
             }
             if (!mobileNav.classList.contains("slide-left")) {
                 mobileNav.classList.add("slide-left");
@@ -38,8 +38,8 @@
                 mobileNav.classList.add("slide-right");
                 mobileNav.classList.remove("slide-left");
             }
-            if (openNav.classList.contains("hidden")) {
-                openNav.classList.remove("hidden");
+            if (openNav.classList.contains("visibility-hidden")) {
+                openNav.classList.remove("visibility-hidden");
             }
         });
         //This code makes sure the mobile menu closes if the window is resized to >~768px
